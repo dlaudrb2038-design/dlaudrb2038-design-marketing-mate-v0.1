@@ -1,0 +1,6 @@
+{
+  "identifier": "pet-window",
+  "description": "Local character window: desktop controls only",
+  "windows": ["pet"],
+  "permissions": ["allow-open-settings", "allow-open-panel", "allow-get-app-status"]
+}

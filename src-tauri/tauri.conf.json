@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "MARKETING MATE",
+  "version": "0.1.0",
+  "identifier": "com.marketingmate.desktop",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://127.0.0.1:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "withGlobalTauri": false,
+    "windows": [
+      {
+        "label": "pet", "title": "MARKETING MATE · Character",
+        "url": "index.html", "width": 192, "height": 192,
+        "transparent": true, "decorations": false, "resizable": false,
+        "alwaysOnTop": true, "skipTaskbar": true, "shadow": false,
+        "focus": false, "visible": false, "backgroundColor": "#00000000"
+      },
+      {
+        "label": "panel", "title": "MARKETING MATE · Panel",
+        "url": "index.html", "width": 400, "height": 560,
+        "minWidth": 360, "minHeight": 480, "visible": false,
+        "center": true
+      },
+      {
+        "label": "settings", "title": "MARKETING MATE · Settings",
+        "url": "index.html", "width": 960, "height": 720,
+        "minWidth": 760, "minHeight": 560, "visible": false,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src ipc: http://ipc.localhost; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'none'",
+      "devCsp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src ipc: http://ipc.localhost ws://127.0.0.1:1420 http://127.0.0.1:1420; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'none'"
+    }
+  },
+  "bundle": {
+    "active": false,
+    "icon": ["icons/icon.png", "icons/icon.ico"],
+    "resources": {
+      "../assets/characters/developer-placeholder/": "assets/characters/developer-placeholder/"
+    }
+  }
+}

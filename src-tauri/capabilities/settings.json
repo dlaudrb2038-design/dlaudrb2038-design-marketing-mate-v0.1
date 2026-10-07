@@ -1,0 +1,6 @@
+{
+  "identifier": "settings-window",
+  "description": "Local settings shell: readonly profile and desktop controls",
+  "windows": ["settings"],
+  "permissions": ["allow-get-profile", "allow-get-app-status", "allow-open-panel", "allow-show-pet", "allow-hide-pet", "allow-quit-app"]
+}

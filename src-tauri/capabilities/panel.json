@@ -1,0 +1,6 @@
+{
+  "identifier": "panel-window",
+  "description": "Local panel shell: desktop controls and readiness",
+  "windows": ["panel"],
+  "permissions": ["allow-open-settings", "allow-show-pet", "allow-hide-pet", "allow-quit-app", "allow-get-app-status"]
+}
